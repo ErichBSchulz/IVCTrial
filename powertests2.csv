@@ -1,0 +1,19 @@
+,comparision,students_per_group,attempts_per_student,groupA,groupB,olswrong,olsns,olssig,olsvsig,geeBwrong,geeBns,geeBsig,geeBvsig,geeBIswrong,geeBIsns,geeBIssig,geeBIsvsig,geeBIwrong,geeBIns,geeBIsig,geeBIvsig,query,time
+0,none,30,10,control,nodif,8,86,2,4,10,180,8,2,5,90,4,1,5,90,4,1,"group == ['control', 'nodif'] and pint < 30 and i < 10",1626410215052.5923
+1,none,30,5,control,nodif,7,88,5,0,12,184,4,0,5,93,2,0,5,93,2,0,"group == ['control', 'nodif'] and pint < 30 and i < 5",1626410227786.5496
+2,none,50,10,control,nodif,11,82,6,1,10,186,4,0,5,93,2,0,5,93,2,0,"group == ['control', 'nodif'] and pint < 50 and i < 10",1626410248360.798
+3,none,50,5,control,nodif,6,91,2,1,8,190,2,0,4,95,1,0,4,95,1,0,"group == ['control', 'nodif'] and pint < 50 and i < 5",1626410266737.789
+4,none,100,10,control,nodif,11,82,6,1,10,186,4,0,5,93,2,0,5,93,2,0,"group == ['control', 'nodif'] and pint < 100 and i < 10",1626410289072.2603
+5,none,100,5,control,nodif,6,91,2,1,8,190,2,0,4,95,1,0,4,95,1,0,"group == ['control', 'nodif'] and pint < 100 and i < 5",1626410308667.0103
+6,small,30,10,control,interventionB,0,45,16,39,0,110,34,56,0,55,17,28,0,55,17,28,"group == ['control', 'interventionB'] and pint < 30 and i < 10",1626410324598.5276
+7,small,30,5,control,interventionB,0,62,22,16,0,128,48,24,0,64,24,12,0,64,24,12,"group == ['control', 'interventionB'] and pint < 30 and i < 5",1626410338614.195
+8,small,50,10,control,interventionB,0,31,15,54,0,80,38,82,0,40,19,41,0,40,19,41,"group == ['control', 'interventionB'] and pint < 50 and i < 10",1626410360463.4985
+9,small,50,5,control,interventionB,0,50,17,33,0,112,32,56,0,56,16,28,0,56,16,28,"group == ['control', 'interventionB'] and pint < 50 and i < 5",1626410380529.9717
+10,small,100,10,control,interventionB,0,31,15,54,0,80,38,82,0,40,19,41,0,40,19,41,"group == ['control', 'interventionB'] and pint < 100 and i < 10",1626410403015.7815
+11,small,100,5,control,interventionB,0,50,17,33,0,112,32,56,0,56,16,28,0,56,16,28,"group == ['control', 'interventionB'] and pint < 100 and i < 5",1626410422741.6455
+12,big,30,10,control,interventionC,0,0,1,99,0,4,8,188,0,2,4,94,0,2,4,94,"group == ['control', 'interventionC'] and pint < 30 and i < 10",1626410438927.2676
+13,big,30,5,control,interventionC,0,5,14,81,0,12,26,162,0,6,13,81,0,6,13,81,"group == ['control', 'interventionC'] and pint < 30 and i < 5",1626410453168.9487
+14,big,50,10,control,interventionC,0,0,0,100,0,0,0,200,0,0,0,100,0,0,0,100,"group == ['control', 'interventionC'] and pint < 50 and i < 10",1626410475574.771
+15,big,50,5,control,interventionC,0,1,2,97,0,4,4,192,0,2,2,96,0,2,2,96,"group == ['control', 'interventionC'] and pint < 50 and i < 5",1626410495476.8594
+16,big,100,10,control,interventionC,0,0,0,100,0,0,0,200,0,0,0,100,0,0,0,100,"group == ['control', 'interventionC'] and pint < 100 and i < 10",1626410517745.9302
+17,big,100,5,control,interventionC,0,1,2,97,0,4,4,192,0,2,2,96,0,2,2,96,"group == ['control', 'interventionC'] and pint < 100 and i < 5",1626410538378.9343
