@@ -41,3 +41,27 @@ def run_test(testing = True, phase=0):
         # accumulate all the results into a single df
         syms = syms.append(sym) if len(syms) else sym
     return syms
+
+
+from math import nan
+def explain_pairs(pairs, trials):
+    x = []
+    for student_set, trial in trials.items():  
+        d = trial['ad'][['group','result']].groupby('group').agg(['mean', 'sum', 'count'])
+        for name, pair in pairs.items():
+            m = [d.loc[pair[g]].result["mean"].real * 100 for g in range(2)]
+            x1 = {"student_set": student_set, "pair": name, "a": m[0], "b": m[1], "dif": m[1] - m[0]}
+            x.append(x1)
+    return pd.DataFrame(x)
+        
+
+pairs = {'none': ['control','nodif'],
+                 'vsmall': ['control','interventionA'],
+                 'small': ['control','interventionB'],
+                 'mod': ['control','interventionBa'],
+                 'mod1': ['control','interventionBb'],         
+                 'big': ['control', 'interventionC'],
+                 'huge': ['control', 'interventionD'],
+                 'upper': [ 'interventionC', 'interventionD']
+                 }
+explain_pairs(pairs, trials).to_csv("downstairs_pairs.csv")
