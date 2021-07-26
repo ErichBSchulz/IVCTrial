@@ -17,9 +17,10 @@ Power calculations used the following steps:
     1. `ad` - main attempt level records
     2. `partd` - participant
     3. `td` - group level data
-1. From the simulated groups different outcomes were assessed using "Generalized Estimating Equations" (`fit_models()`) using trials of different pairs of groups and increasing sample sizes. Each comparison was the classified as:
+1. From the simulated groups different outcomes were assessed using various paremitisations of "Generalized Estimating Equations" (`fit_models()`) using trials of different pairs of groups and increasing sample sizes. Each comparison was the classified, for each parametisation (`geeBI` etc) as:
     1. wrong (p < 0.05 and wrong conclusion reached)
     1. ns (p >= 0.05)
     1. sig (0.05 > p > 0.01)
     1. vsig (p <= 0.01)
-1. The simulated studies were then filtered to find the smallest study where at least 80% reached a significance of p < 0.05. (Using the  `SimulationAnalysis`)
+1. The results of each set of simulated trials is saved as a `textXXX.csv`
+1. The simulated studies were then filtered to find the smallest study where at least 80% reached a significance of p < 0.05 for each combination of population and intervention (effect size). (Using the  `SimulationAnalysis` notebook)
